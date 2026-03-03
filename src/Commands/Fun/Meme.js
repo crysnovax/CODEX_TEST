@@ -45,12 +45,12 @@ module.exports = {
             ];
 
             const caption = `
-╭─❍ *CRYSNOVA MEME*
+╭─❍ *𝗖𝗢𝗗𝗘𝗫 MEME*
 │
 │ 🐕 Cheems Meme Loaded
 │
 │ Use buttons below
-╰─𓄄 Powered by Crysnova
+╰─𓄄 Powered by 𝗖𝗢𝗗𝗘𝗫 𝐀𝐈
             `.trim();
 
             await sock.sendMessage(
