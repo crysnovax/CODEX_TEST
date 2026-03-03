@@ -84,7 +84,7 @@ module.exports = {
         const caption =
             `📸 *Instagram Downloader*\n\n` +
             `Caption: ${result.title || 'Instagram Media'}\n` +
-            `Downloaded by Crysnova AI`;
+            `Downloaded by 𝗖𝗢𝗗𝗘𝗫`;
 
         await sock.sendMessage(m.key.remoteJid, {
             video: { url: result.video },
