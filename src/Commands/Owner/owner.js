@@ -19,7 +19,7 @@ module.exports = {
             const vcard = `
 BEGIN:VCARD
 VERSION:3.0
-FN:CRYSNOVA BOT
+FN:𝗖𝗢𝗗𝗘𝗫 BOT
 TEL;type=CELL;type=VOICE;waid=${ownerNumber}:${ownerNumber}
 END:VCARD
             `.trim();
