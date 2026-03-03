@@ -70,7 +70,7 @@ module.exports = {
 
                 `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(pageTitle)}`,
 
-                { headers: { 'User-Agent': 'CRYSNOVA-AI-BOT/2.0' }, timeout: 10000 }
+                { headers: { 'User-Agent': '𝗖𝗢𝗗𝗘𝗫-AI-BOT/2.0' }, timeout: 10000 }
 
             );
 
@@ -130,7 +130,7 @@ module.exports = {
 
                         externalAdReply: {
 
-                            title: "CRYSNOVA WIKI",
+                            title: "𝗖𝗢𝗗𝗘𝗫 WIKI",
 
                             body: author,
 
