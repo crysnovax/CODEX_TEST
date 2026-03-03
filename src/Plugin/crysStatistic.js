@@ -1,5 +1,5 @@
 /**
- * CRYSNOVA AI V2.0 - Statistics (Kord-style)
+ * 𝗖𝗢𝗗𝗘𝗫 AI V2.0 - Statistics (crysnova ai-style)
  */
 
 const crysStatistic = (app, io) => {
