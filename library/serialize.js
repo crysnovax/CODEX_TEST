@@ -1,5 +1,5 @@
 
-// © 2026 CRYSNOVA. All Rights Reserved.
+// © 2026 𝗖𝗢𝗗𝗘𝗫. All Rights Reserved.
 // respect the work, don’t just copy-paste.
 
 const {
