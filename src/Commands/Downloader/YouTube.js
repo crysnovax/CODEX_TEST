@@ -82,7 +82,7 @@ module.exports = {
         const caption =
             `🎬 *YouTube Downloader*\n\n` +
             `Title: ${result.title || 'YouTube Video'}\n` +
-            `Downloaded by Crysnova AI`;
+            `Downloaded by 𝗖𝗢𝗗𝗘𝗫`;
 
         await sock.sendMessage(m.key.remoteJid, {
             video: { url: result.video },
