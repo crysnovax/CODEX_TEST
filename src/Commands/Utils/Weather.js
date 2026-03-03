@@ -61,7 +61,7 @@ module.exports = {
             const weatherText = `
 ${emoji}
 
-╭─❍ *CRYSNOVA WEATHER*
+╭─❍ *𝗖𝗢𝗗𝗘𝗫 WEATHER*
 │ 📍 ${data.name}, ${data.sys.country}
 │ ${emoji} ${data.weather[0].description}
 │
