@@ -30,7 +30,7 @@ module.exports = {
 
         if (action === 'restart') {
 
-            await reply('_🔄 Restarting CRYSNOVA AI V2..._');
+            await reply('_🔄 Restarting 𝗖𝗢𝗗𝗘𝗫 AI V2..._');
 
             // Graceful restart using a process manager
 
