@@ -40,13 +40,13 @@ module.exports = {
       if (cmd === '.vv' && args[0] === 'cmd' && args[1]) {
         reactionTriggers[sender] = args[1];
         saveTriggers();
-        return reply(`╭─❍ *CRYSNOVA AI V2.0*\n│ ✓ Reaction trigger set: ${args[1]}\n╰──────────────────`);
+        return reply(`╭─❍ *𝗖𝗢𝗗𝗘𝗫 𝐀𝐈 V2.0*\n│ ✓ Reaction trigger set: ${args[1]}\n╰──────────────────`);
       }
 
       // ───── MUST REPLY ─────
       let quoted = m.message?.extendedTextMessage?.contextInfo?.quotedMessage;
       if (!quoted) {
-        return reply('╭─❍ *CRYSNOVA AI V2.0*\n│ ✘ Reply to a view-once message.\n╰──────────────────');
+        return reply('╭─❍ *𝗖𝗢𝗗𝗘𝗫 𝐀𝐈 V2.0*\n│ ✘ Reply to a view-once message.\n╰──────────────────');
       }
 
       // unwrap ephemeral
@@ -60,7 +60,7 @@ module.exports = {
       const type = Object.keys(quoted)[0];
 
       if (!['imageMessage','videoMessage','stickerMessage'].includes(type)) {
-        return reply('╭─❍ *CRYSNOVA AI V2.0*\n│ ✘ Only view-once media supported.\n╰──────────────────');
+        return reply('╭─❍ *𝗖𝗢𝗗𝗘𝗫 𝐀𝐈 V2.0*\n│ ✘ Only view-once media supported.\n╰──────────────────');
       }
 
       const stream = await downloadContentFromMessage(
@@ -84,16 +84,16 @@ module.exports = {
       if (cmd === '.vvp') {
         await sock.sendMessage(sender, {
           [sendType]: buffer,
-          caption: `╭─❍ *CRYSNOVA AI V2.0*\n│ ✓ View-once saved privately.\n╰──────────────────`
+          caption: `╭─❍ *✦𝗖𝗢𝗗𝗘𝗫 𝐀𝐈 V2.0*\n│ ✓ View-once saved privately.\n╰──────────────────`
         });
 
-        return reply('╭─❍ *CRYSNOVA AI V2.0*\n│ ✓ Sent to your DM.\n╰──────────────────');
+        return reply('╭─❍ *𝗖𝗢𝗗𝗘𝗫 𝐀𝐈 V2.0*\n│ ✓ Sent to your DM.\n╰──────────────────');
       }
 
       // ───── NORMAL (.vv) ─────
       await sock.sendMessage(m.chat, {
         [sendType]: buffer,
-        caption: `╭─❍ *CRYSNOVA AI V2.0*\n│ ✓ View-once unlocked.\n╰──────────────────`
+        caption: `╭─❍ *𝗖𝗢𝗗𝗘𝗫 𝐀𝐈 V2.0*\n│ ✓ View-once unlocked.\n╰──────────────────`
       }, { quoted: m });
 
 
@@ -101,7 +101,7 @@ module.exports = {
       if (!listenerAttached) {
         listenerAttached = true;
 
-        sock.ev.on('messages.reaction', async (updates) => {
+        𝐀𝐈 sock.ev.on('messages.reaction', async (updates) => {
           try {
             const update = updates[0];
             const reactedEmoji = update.reaction?.text;
@@ -143,7 +143,7 @@ module.exports = {
 
             await sock.sendMessage(reactor, {
               [st]: buf,
-              caption: `╭─❍ *CRYSNOVA AI V2.0*\n│ ✓ View-once saved via reaction ${reactedEmoji}\n╰──────────────────`
+              caption: `╭─❍ *𝗖𝗢𝗗𝗘𝗫 𝐀𝐈 V2.0*\n│ ✓ View-once saved via reaction ${reactedEmoji}\n╰──────────────────`
             });
 
           } catch {}
@@ -152,7 +152,7 @@ module.exports = {
 
     } catch (err) {
       console.error('[VV ERROR]', err);
-      reply('╭─❍ *CRYSNOVA AI V2.0*\n│ ✘ Error unlocking view-once.\n╰──────────────────');
+      reply('╭─❍ *𝗖𝗢𝗗𝗘𝗫 𝐀𝐈 V2.0*\n│ ✘ Error unlocking view-once.\n╰──────────────────');
     }
   }
 };
