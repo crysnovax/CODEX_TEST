@@ -408,12 +408,12 @@ bot hosting net (https://Bot-hosting.net)
 
 For detailed setup and command addition, check the tutorial videos!
 
-> Built by crysn⚉va
+> Built by CODEX
 ---
 
 <div align="center">
   
-**© 2026 CRYSNOVA AI. Powered by CRYSN⚉VA X. All rights reserved.**
+**© 2026 CRYSNOVA AI. Powered by CODEX AI. All rights reserved.**
 
 Made by crysnovax
 
